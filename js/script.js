@@ -3,7 +3,7 @@
 ////////// VARIABLES /////////
 //////////////////////////////
 
-let playerWrapper = document.getElementsByClassName("player-wrapper")[0].style;
+const playerWrapper = document.getElementsByClassName("player-wrapper")[0].style;
 
 // Player One
 let scoreOne = 0;
@@ -79,6 +79,7 @@ function reset(){
 		default:
 			scorePanelOne.style.color = "#000";
 			scorePanelTwo.style.color = "#000";
+			scorePanel.style.color = "#000";
 			break;
 	}
 }
