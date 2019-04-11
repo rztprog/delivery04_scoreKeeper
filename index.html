@@ -4,19 +4,33 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<link rel="shortcut icon" type="image/ico" href=img/favicon.ico" />
+		<link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<title>ScoreKeeper</title>
 	</head>
-	<body>
+	<body class="body">
 		<header class="header">
 			<h1>ScoreKeeper</h1>
 		</header>
 		<main class="main">
-
+			<div class="player-wrapper">
+				<div class="player player--one"><span>Player 1</span></div>
+				<div class="player player--two"><span>Player 2</span></div>
+			</div>
+			<div class="scorePanel-wrapper">
+				<div class="scorePanel scorePanel--one">0</div>
+				<div class="scorePanel scorePanel--two">0</div>
+			</div>
+			<div class="button-wrapper">
+				<button class="button button--one">Player 1</button>
+				<button class="button button--two">Player 2</button>
+			</div>
+			<div class="buttonLast">
+				<button class="button--reset">Reset</button>
+			</div>
 		</main>
 		<footer class="footer">
 		</footer>
-		<script src="./js/script.js"></script>
+		<script src="js/script.js"></script>
 	</body>
 </html>
