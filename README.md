@@ -6,17 +6,17 @@ Made a scoreKeeper with vanilla JS
 
 ## Quality criteria
 
-* 2 Separate counters (P1, P2)
-* 3 Buttons (P1, P2, Reset)
-* Each click increment each score
-* When score max => Score in green & Lock everything
-* Input to set the max score
-* Vanilla JS (no framework) 
+* 2 Separate counters (P1, P2) ✅
+* 3 Buttons (P1, P2, Reset) ✅
+* Each click increment each score ✅ 
+* When score max => Score in green & Lock everything ✅ (Bug after press reset)
+* Input to set the max score ✅
+* Vanilla JS (no framework) ✅
 
 ## Bonus criteria
 
-* Better Style
-* Darkmode
+* Better Style ✅
+* Darkmode ✅
 
 ## Uses
 
