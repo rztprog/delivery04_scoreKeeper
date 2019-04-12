@@ -4,7 +4,8 @@
 //////////////////////////////
 
 const playerWrapper = document.getElementsByClassName("player-wrapper")[0].style;
-const scorePanel = document.getElementsByClassName("scorePanel")[0];
+const footer = document.getElementsByClassName("footer")[0];
+const copyr = document.getElementsByClassName("copyr")[0];
 
 // Player One
 let scoreOne = 0;
@@ -52,14 +53,20 @@ function incrementTwo(){
 function scoreCheck(){
 	if(scorePanelOne.innerHTML == stop.value){
 		scorePanelOne.style.color = "#0F0";
+		scorePanelTwo.style.color = "#F00";
 		scorePanelOne.style.border = "3px solid #0F0";
 		scorePanelTwo.style.border = "3px solid #F00";
+		buttonOne.style.color = "#888";
+		buttonTwo.style.color = "#888";
 		buttonOne.onclick = null;
 		buttonTwo.onclick = null;
 	}else if(scorePanelTwo.innerHTML == stop.value){
 		scorePanelTwo.style.color = "#0F0";
+		scorePanelOne.style.color = "#F00";
 		scorePanelTwo.style.border = "3px solid #0F0";
 		scorePanelOne.style.border = "3px solid #F00";
+		buttonOne.style.color = "#888";
+		buttonTwo.style.color = "#888";
 		buttonOne.onclick = null;
 		buttonTwo.onclick = null;
 	}
@@ -70,13 +77,16 @@ function reset(){
 	buttonOne.onclick = increment;
 	buttonOne.addEventListener("click", scoreCheck);
 	scorePanelOne.innerHTML = scoreOne;
+	scorePanelOne.style.border = "2px solid #666";
+	buttonOne.style.color = "#FFF";
 
 	scoreTwo = 0;
 	buttonTwo.onclick = incrementTwo;
 	buttonTwo.addEventListener("click", scoreCheck);
 	scorePanelTwo.innerHTML = scoreTwo;
+	scorePanelTwo.style.border = "2px solid #666";
+	buttonTwo.style.color = "#FFF";
 
-	scorePanel.style.border = "2px solid #666";
 	stop.value = null;
 
 	switch(y) {
@@ -87,7 +97,6 @@ function reset(){
 		default:
 			scorePanelOne.style.color = "#000";
 			scorePanelTwo.style.color = "#000";
-			scorePanel.style.color = "#000";
 			break;
 	}
 };
@@ -102,6 +111,8 @@ function darkmode(){
 			playerWrapper.color = "#000";
 			scorePanelOne.style.color = "#000";
 			scorePanelTwo.style.color = "#000";
+			copyr.style.color = "#000";
+			footer.style.backgroundColor = "#DDD";
 			dark.textContent = "🌑";
 			y--;
 			break;
@@ -113,7 +124,8 @@ function darkmode(){
 			playerWrapper.color = "#FFF";
 			scorePanelOne.style.color = "#FFF";
 			scorePanelTwo.style.color = "#FFF";
-			dark.textContent = "🌑";
+			footer.style.backgroundColor = "#555";
+			copyr.style.color = "#FFF";
 			dark.textContent = "☀️";
 			y++;
 			break;
