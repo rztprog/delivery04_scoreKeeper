@@ -4,6 +4,7 @@
 //////////////////////////////
 
 const playerWrapper = document.getElementsByClassName("player-wrapper")[0].style;
+const scorePanel = document.getElementsByClassName("scorePanel")[0];
 
 // Player One
 let scoreOne = 0;
@@ -14,8 +15,8 @@ buttonOne.addEventListener("click", scoreCheck);
 
 // Player Two
 let scoreTwo = 0;
-let scorePanelTwo = document.getElementsByClassName("scorePanel--two")[0];
-let buttonTwo = document.getElementsByClassName("button--two")[0];
+const scorePanelTwo = document.getElementsByClassName("scorePanel--two")[0];
+const buttonTwo = document.getElementsByClassName("button--two")[0];
 buttonTwo.onclick = incrementTwo;
 buttonTwo.addEventListener("click", scoreCheck);
 
@@ -51,10 +52,14 @@ function incrementTwo(){
 function scoreCheck(){
 	if(scorePanelOne.innerHTML == stop.value){
 		scorePanelOne.style.color = "#0F0";
+		scorePanelOne.style.border = "3px solid #0F0";
+		scorePanelTwo.style.border = "3px solid #F00";
 		buttonOne.onclick = null;
 		buttonTwo.onclick = null;
 	}else if(scorePanelTwo.innerHTML == stop.value){
 		scorePanelTwo.style.color = "#0F0";
+		scorePanelTwo.style.border = "3px solid #0F0";
+		scorePanelOne.style.border = "3px solid #F00";
 		buttonOne.onclick = null;
 		buttonTwo.onclick = null;
 	}
@@ -64,13 +69,14 @@ function reset(){
 	scoreOne = 0;
 	buttonOne.onclick = increment;
 	buttonOne.addEventListener("click", scoreCheck);
-	scorePanelOne.innerHTML = 0;
+	scorePanelOne.innerHTML = scoreOne;
 
 	scoreTwo = 0;
 	buttonTwo.onclick = incrementTwo;
 	buttonTwo.addEventListener("click", scoreCheck);
-	scorePanelTwo.innerHTML = 0;
+	scorePanelTwo.innerHTML = scoreTwo;
 
+	scorePanel.style.border = "2px solid #666";
 	stop.value = null;
 
 	switch(y) {
