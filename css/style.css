@@ -111,7 +111,10 @@
 	.scorePanel{
 		font-size: 6em;
 	}
-
+	
+	.socialList-logo{
+		width: 100px;
+	}
 }
 
 /*** TABLET ***/
@@ -123,6 +126,10 @@
 
 	.scorePanel{
 		font-size: 6em;
+	}
+
+	.socialList-logo{
+		width: 80px;
 	}
 }
 
