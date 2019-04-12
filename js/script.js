@@ -54,8 +54,8 @@ function scoreCheck(){
 	if(scorePanelOne.innerHTML == stop.value){
 		scorePanelOne.style.color = "#0F0";
 		scorePanelTwo.style.color = "#F00";
-		scorePanelOne.style.border = "3px solid #0F0";
-		scorePanelTwo.style.border = "3px solid #F00";
+		scorePanelOne.style.border = "2px solid #0F0";
+		scorePanelTwo.style.border = "2px solid #F00";
 		buttonOne.style.color = "#888";
 		buttonTwo.style.color = "#888";
 		buttonOne.onclick = null;
@@ -63,8 +63,8 @@ function scoreCheck(){
 	}else if(scorePanelTwo.innerHTML == stop.value){
 		scorePanelTwo.style.color = "#0F0";
 		scorePanelOne.style.color = "#F00";
-		scorePanelTwo.style.border = "3px solid #0F0";
-		scorePanelOne.style.border = "3px solid #F00";
+		scorePanelTwo.style.border = "2px solid #0F0";
+		scorePanelOne.style.border = "2px solid #F00";
 		buttonOne.style.color = "#888";
 		buttonTwo.style.color = "#888";
 		buttonOne.onclick = null;
