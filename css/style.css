@@ -93,7 +93,9 @@
 
 .darkmode{
 	position: absolute;
+	margin: 0.5em;
 	right: 10px;
+	top: 10px;
 }
 
 .darkmode-button{
@@ -138,6 +140,10 @@
 
 	.body{
 		background: #444 url("") no-repeat center;
+	}
+	.darkmode-button{
+		background-color: white;
+		padding: 10px;
 	}
 }
 
