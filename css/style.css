@@ -12,6 +12,7 @@
 .socialList{
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
 
 .scorePanel,
@@ -98,6 +99,31 @@
 .copyr{
 	text-align: center;
 	font-size: 0.8em;
+}
+
+/***  MOBILE ***/
+@media screen and (max-width: 599px) and (min-width: 320px){
+	.button{
+		padding: 20px 40px 20px 40px;
+		font-size: 2em;
+	}
+
+	.scorePanel{
+		font-size: 6em;
+	}
+
+}
+
+/*** TABLET ***/
+@media screen and (max-width: 800px) and (min-width: 600px){
+	.button{
+		padding: 20px 40px 20px 40px;
+		font-size: 2em;
+	}
+
+	.scorePanel{
+		font-size: 6em;
+	}
 }
 
 
