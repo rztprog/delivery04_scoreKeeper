@@ -106,25 +106,25 @@ function darkmode(){
 		case 1:		// LIGHT
 			body.backgroundColor = "#FFF";
 			body.color = "#000";
-			header.backgroundColor = "#DDD";
+			header.backgroundColor = "hsla(0, 0%, 87%, 0.6)";
+			footer.style.backgroundColor = "hsla(0, 0%, 87%, 0.6)";
 			header.color = "#000";
 			playerWrapper.color = "#000";
 			scorePanelOne.style.color = "#000";
 			scorePanelTwo.style.color = "#000";
 			copyr.style.color = "#000";
-			footer.style.backgroundColor = "#DDD";
 			dark.textContent = "🌑";
 			y--;
 			break;
 		default:	// DARK
 			body.backgroundColor = "#444";
 			body.color = "#FFF";
-			header.backgroundColor = "#555";
+			header.backgroundColor = "hsla(0, 0%, 33%, 0.6)";
+			footer.style.backgroundColor = "hsla(0, 0%, 33%, 0.6)";
 			header.color = "#FFF";
 			playerWrapper.color = "#FFF";
 			scorePanelOne.style.color = "#FFF";
 			scorePanelTwo.style.color = "#FFF";
-			footer.style.backgroundColor = "#555";
 			copyr.style.color = "#FFF";
 			dark.textContent = "☀️";
 			y++;
