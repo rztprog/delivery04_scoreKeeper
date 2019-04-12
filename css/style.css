@@ -8,7 +8,8 @@
 .scorePanel-wrapper,
 .button-wrapper,
 .buttonLast,
-.input-wrapper{
+.input-wrapper,
+.socialList{
 	display: flex;
 	justify-content: center;
 }
@@ -17,6 +18,12 @@
 .player,
 .button{
 	margin: 10px;
+}
+
+.button,
+.socialList-logo,
+.darkmode-button{
+	cursor: pointer;
 }
 
 .body{
@@ -38,7 +45,8 @@
 	color: #FFF;
 }
 
-.header{
+.header,
+.footer{
 	margin: 0.5em;
 	padding: 2em;
 	background-color: #555;
@@ -49,7 +57,7 @@
 	border: 2px solid #666;
 	padding: 0.5em;	
 	font-size: 5em;
-	background-color: #888;
+	/* background-color: #888; */
 }
 
 .scorePanel--one{
@@ -61,7 +69,12 @@
 }
 
 .button{
-	padding: 10px 5px 10px 5px;	
+	font-size: 1.5em;
+	padding: 10px;	
+	color: #FFF;
+	background-color: #666;
+	border: 1px solid black;
+	border-radius: 5px;
 }
 
 .darkmode{
@@ -73,3 +86,19 @@
 	background-color: white;
 	padding: 20px;
 }
+
+.socialList{
+	list-style-type: none;
+}
+
+.socialList-logo{
+	margin: 10px;
+	width: 50px;
+}
+
+.copyr{
+	text-align: center;
+	font-size: 0.8em;
+}
+
+
