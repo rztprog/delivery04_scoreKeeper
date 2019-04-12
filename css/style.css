@@ -111,7 +111,13 @@
 	.scorePanel{
 		font-size: 6em;
 	}
+
+	.socialList{
 	
+		display: flex;
+		flex-wrap: wrap;
+	}
+
 	.socialList-logo{
 		width: 100px;
 	}
