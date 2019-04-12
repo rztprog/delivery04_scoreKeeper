@@ -14,13 +14,13 @@ buttonOne.addEventListener("click", scoreCheck);
 
 // Player Two
 let scoreTwo = 0;
-const scorePanelTwo = document.getElementsByClassName("scorePanel--two")[0];
-const buttonTwo = document.getElementsByClassName("button--two")[0];
+let scorePanelTwo = document.getElementsByClassName("scorePanel--two")[0];
+let buttonTwo = document.getElementsByClassName("button--two")[0];
 buttonTwo.onclick = incrementTwo;
 buttonTwo.addEventListener("click", scoreCheck);
 
 // Reset
-const buttonReset = document.getElementsByClassName("button--reset")[0]; 
+let buttonReset = document.getElementsByClassName("button--reset")[0]; 
 buttonReset.onclick = reset; 
 
 // Stop
@@ -41,12 +41,12 @@ dark.onclick = darkmode;
 function increment(){
 	scoreOne++;
 	scorePanelOne.innerHTML = scoreOne;
-}
+};
 
 function incrementTwo(){
 	scoreTwo++;
 	scorePanelTwo.innerHTML = scoreTwo;
-}
+};
 
 function scoreCheck(){
 	if(scorePanelOne.innerHTML == stop.value){
@@ -58,18 +58,20 @@ function scoreCheck(){
 		buttonOne.onclick = null;
 		buttonTwo.onclick = null;
 	}
-}
+};
 
 function reset(){
 	scoreOne = 0;
 	buttonOne.onclick = increment;
 	buttonOne.addEventListener("click", scoreCheck);
-	scorePanelOne.innerHTML = scoreOne;
+	scorePanelOne.innerHTML = 0;
 
 	scoreTwo = 0;
 	buttonTwo.onclick = incrementTwo;
 	buttonTwo.addEventListener("click", scoreCheck);
-	scorePanelTwo.innerHTML = scoreTwo;
+	scorePanelTwo.innerHTML = 0;
+
+	stop.value = null;
 
 	switch(y) {
 		case 1: 
@@ -82,7 +84,7 @@ function reset(){
 			scorePanel.style.color = "#000";
 			break;
 	}
-}
+};
 
 function darkmode(){
 	switch(y) {
